@@ -30,12 +30,16 @@ Headers are defined by the '#'symbol.  One '#' for H1, two for H2, etc.
     # H1 Header 
 -->
 > **TODO**. Create an H1 
+> # Header 1
 
 > **TODO**. Create an H2 
+> ## Header 2
 
 > **TODO**. Create an H3 
+> ### Header 3
 
 > **TODO**. Create an H4 
+> #### Header 4
 
 ---
 
