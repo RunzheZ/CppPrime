@@ -17,6 +17,8 @@ Specifically, Visual Studio Code uses the [CommonMark](http://commonmark.org/) M
   - [Links](#links)
   - [Images](#images)
   - [Code](#code)
+  - [Tables](#tables)
+  - [Custom HTML](#custom-html)
   - [Custom CSS](#custom-css)
   - [Additional Resources](#additional-resources)
 
@@ -111,7 +113,7 @@ You can also put Bold and Italicized text inline by surrounding a group of words
 
 > **TODO**. Create a bold sentence, an italicized sentence, and a sentence with both bold and italicized text inline
 
-
+This is my _italicized_ word and this is my **world**.
 
 ---
 
@@ -132,6 +134,12 @@ For what it's worth, I prefer dashes...
 
 ---
 
+***
+
+___
+
+
+
 ## Lists
 
 Create unordered lists using '-', '*', '+, 
@@ -144,6 +152,12 @@ Create unordered lists using '-', '*', '+,
     - sdfsd
 -->
 
+- item
+* item
++ item
++ item
+
+
 You can create sublists by indenting
 <!-- 
     Example
@@ -151,6 +165,10 @@ You can create sublists by indenting
     - item
     - subitem
 -->
+
+- list 
+  - sublist
+    - subsublist
 
 Create ordered lists using a number prefix
 
@@ -162,6 +180,10 @@ Create ordered lists using a number prefix
     3. item 3 
 -->
 
+1. Item 1
+2. Item 2
+3. Item 3
+   
 > **TODO** Create an unordered list of your 5 favorite TV Shows 
 
 > **TODO** Create an ordered list of your top 5 Movies 
@@ -176,6 +198,7 @@ Create a link by surrounding it with angle bracket
 
     <http://www.jamesqquick.com> 
 -->
+<https://github.com/RunzheZ/CppPrime>
 
 Create a link with text by surrounding text with brackets, [], and link immediately following with parenthesis ()
 
@@ -184,6 +207,8 @@ Create a link with text by surrounding text with brackets, [], and link immediat
 
     [James Q Quick](http://www.jamesqquick.com) 
 -->
+
+[My Github](https://github.com/RunzheZ/CppPrime)
 
 > **TODO** Create a link to your website, twitter, or github. with no text
 
@@ -199,6 +224,7 @@ Create reference style links by defining your link with the a 'key' inside of br
     [1]: http://jamesqquick.com/ 
 -->
 
+[Github Website]: https://github.com/RunzheZ/CppPrime
 Then use the reference style link by using your text inside of brackets followed by the link 'key' inside of bracket.
 
 <!-- 
@@ -206,6 +232,8 @@ Then use the reference style link by using your text inside of brackets followed
 
     [My Website][1] 
 -->
+
+[My Github][Github Website]
 
 > **TODO** Create a reference link to your website and reference it three times
 
@@ -219,8 +247,11 @@ Names will be converted to ids by replacing spaces with hyphens and uppercase le
 
 Ex 'Header Info' becomes header-info
 
+Header Info --> header-info
+
 > **TODO** Create a link to another part of your page.
 
+[Code](#code)
 
 ---
 
@@ -262,6 +293,8 @@ You can do inline code with `backticks` (``)
 
 > **TODO** Display a line of text with inline code
 
+Here is some code inline `var item = {}`
+
 You can do blocks of code by surroung it with 3 backticks (``` ```)
 
 <!-- 
@@ -274,10 +307,13 @@ You can do blocks of code by surroung it with 3 backticks (``` ```)
 -->
 
 > **TODO** Display a block of code from your favorite language
-
+```
+    var item = {}
+    item.something = "something";
+```
 The above does not give language specific highlighting.  You can specify the programming language immediately following the opening 3 backticks.  You Should see a difference in highliting!
 
-
+> Javescript code block
 <!-- 
     Example Javascript
 
@@ -286,6 +322,11 @@ The above does not give language specific highlighting.  You can specify the pro
     var num2 = 0;
     ``` 
 -->
+
+```javascript
+    var num = 0;
+    var num2 = 0;
+``` 
 
 <!--
     Example HTML
@@ -296,6 +337,14 @@ The above does not give language specific highlighting.  You can specify the pro
     </div>
     ```
 -->
+
+> HTML code block
+
+```html 
+    <div>
+        <p>This is an html example</p>
+    </div>
+```
 
 > **TODO** Display a block of code from your favorite language while specifying the language
 
@@ -324,6 +373,9 @@ The column definitions and row definitions do not have to have the exact same wi
     |Loooooooooooooong item 1 | looooooooooong item 2 | 
 -->
 
+| Header 1 | Header 2 |
+| ----| ---|
+|Loooooooooooooong item 1 | looooooooooong item 2 | 
 
 <!-- 
     Example
@@ -345,6 +397,10 @@ You can also align (Center, left, right) the text in a column by using colons (:
     | ------ | :------: | --------: |
     | Aligned Left | Aligned Center | Aligned Right | 
 -->
+
+| Header | Header 1 | Header 2  |
+| ------ | :------: | --------: |
+| Aligned Left | Aligned Center | Aligned Right | 
 
 ---
 
