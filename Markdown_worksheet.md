@@ -111,6 +111,10 @@ You can also put Bold and Italicized text inline by surrounding a group of words
 
 > **TODO**. Create a bold sentence, an italicized sentence, and a sentence with both bold and italicized text inline
 
+
+
+---
+
 ## Horizontal Rule
 A horizontal rule gives a visible line break.  You can create one by putting three or more hypens, asterisks, or underscores (-, *, _).
 
