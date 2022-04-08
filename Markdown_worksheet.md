@@ -10,6 +10,7 @@ Specifically, Visual Studio Code uses the [CommonMark](http://commonmark.org/) M
   - [Sections](#sections)
   - [Headers](#headers)
   - [Quotes](#quotes)
+  - [> # This is really big quote](#--this-is-really-big-quote)
   - [Emphasis](#emphasis)
   - [Horizontal Rule](#horizontal-rule)
   - [Lists](#lists)
@@ -56,6 +57,8 @@ Quotes are defined by the  '>' symbol
 
 > **TODO**. Create a quote
 
+> This is my quote
+
 You can combine a header with a quote.
 
 <!-- 
@@ -66,6 +69,7 @@ You can combine a header with a quote.
 
 > **TODO**. Create an H2 Quote 
 
+> # This is really big quote
 ---
 
 ## Emphasis
@@ -80,6 +84,10 @@ Two before and after (no spaces) a section of texts makes it bold
     __Bold Text with underscores__
 -->
 
+**Bold Sentence**
+
+__Bold with italics__
+
 One before and after (no spaces) a section of texts makes it bold 
 
 <!-- 
@@ -88,6 +96,11 @@ One before and after (no spaces) a section of texts makes it bold
     *Italicized Text with asterisks*
     _Italicized Text with underscores_
 --> 
+
+*Italic sentence*
+
+_Italic sentence_
+
 You can also put Bold and Italicized text inline by surrounding a group of words.
 
 <!-- 
